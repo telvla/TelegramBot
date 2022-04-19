@@ -14,8 +14,8 @@ Route::get('/', function () {
 });
 
 
-/*
+
 Route::get('/test-http', function () {
-    Http::post('https://api.tlgr.org/bot');
+    dd(config('telegram_bot.name'));
+
 });
-*/
