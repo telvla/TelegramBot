@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 
 
-Route::get('/test-http', function () {
-    dd(config('telegram_bot.name'));
+Route::get('/test-http', function (\App\Helpers\Telegram $telegram) {
+    $telegram->sendMessage(835916638, '<b>Привет</b>');
 
 });
