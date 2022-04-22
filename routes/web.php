@@ -8,7 +8,6 @@ Route::get('/', function () {
     //$key = base64_decode(md5(uniqid()));
     //dd($key);
     //Log::debug($key);
-
 });
 
 Route::get('/test-http', function (\App\Helpers\Telegram $telegram) {
