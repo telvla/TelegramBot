@@ -23,6 +23,16 @@ class Telegram
         ]);
     }
 
+    public function sendImg() 
+    {
+
+    }
+
+    public function sendPrewImg() 
+    {
+
+    }
+
     public function getMessage() 
     {
         
