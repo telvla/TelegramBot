@@ -2,8 +2,8 @@
 
 namespace App\Helpers;
 
-interface ImageInterface {
- 
+interface ImageInterface 
+{
     public function getUrl() : bool;
     public function isUrl() : bool;
 }
