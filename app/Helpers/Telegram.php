@@ -3,6 +3,7 @@
 namespace App\Helpers;
 
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 class Telegram
 {
@@ -42,9 +43,12 @@ class Telegram
 
     }
 
-    public function sendPrewImg() 
+    public function sendPrewImg(int $id_chat) : object
     {
-
+        return Http::attach('document', Storage::get('/public/prew_img_test.jpg'), 'prew.jpg')
+                    ->post($this->url.config('telegram_bot.name').'/sendMessage', [
+                        'chat_id' => $id_chat
+                    ]);        
     }
 
     public function sendMenu() 
