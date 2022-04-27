@@ -9,6 +9,10 @@ Route::get('/', function () {
     //Log::debug($key);
 });
 
+Route::get('/start-message', function (\App\Helpers\Telegram $telegram) {
+    $telegram->sendStartMessage(835916638);
+});
+
 Route::get('/test-http', function (\App\Helpers\Telegram $telegram) {
     $telegram->sendMessage(835916638, '<b>Привет</b>');
 });

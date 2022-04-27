@@ -23,9 +23,13 @@ class Telegram
         ]);
     }
 
-    public function sendStartMessage() 
+    public function sendStartMessage(int $id_chat) : object
     {
-        //объяснить кто мы и что мы
+        return Http::post($this->url.config('telegram_bot.name').'/sendMessage', [
+            'chat_id' => $id_chat,
+            'text' => (string)view('start-message'),
+            'parse_mode' => 'html'
+        ]);        
     }
 
     public function getCheckOreder() 
