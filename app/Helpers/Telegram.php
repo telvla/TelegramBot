@@ -23,6 +23,16 @@ class Telegram
         ]);
     }
 
+    public function sendStartMessage() 
+    {
+        //объяснить кто мы и что мы
+    }
+
+    public function getCheckOreder() 
+    {
+        //подтвержения заказа
+    }
+
     public function sendImg() 
     {
 
@@ -33,8 +43,16 @@ class Telegram
 
     }
 
+    public function sendMenu() 
+    {
+        //кнопки оформления заказа // помощь // цены //правила
+
+    }
+
     public function getMessage() 
     {
         
     }
+
+
 }
