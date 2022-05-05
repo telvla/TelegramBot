@@ -54,13 +54,10 @@ class Telegram
     public function sendMenu() 
     {
         //кнопки оформления заказа // помощь // цены //правила
-
     }
 
     public function getMessage() 
     {
         
     }
-
-
 }
