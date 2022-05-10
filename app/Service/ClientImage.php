@@ -13,7 +13,7 @@ class ClientImage implements ImageInterface
         $this->img = $img;
     }
 
-    public function isUrl() : bool 
+    public function isImg() : bool
     {
         //проверка корректного урл и проверка существования изображения
     }
