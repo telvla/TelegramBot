@@ -12,5 +12,5 @@ Route::get('/img-prew', function (\App\Helpers\Telegram $telegram) {
 });
 
 Route::get('/test-http', function (\App\Helpers\Telegram $telegram) {
-    $telegram->sendMessage(835916638, '<b>Привет</b>');
+    $telegram->sendMessage(835916638, 'Send message');
 });
